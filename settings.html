@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <title>Music - M Cooking</title>
+        <script type="text/javascript">
+        
+        </script>
+        <style>
+              body{
+                background-image:url('https://www.asianpaints.com/content/dam/asian_paints/colours/swatches/7897.png.transform/cc-width-720-height-540/image.png');background-size:cover;background-repeat: no-repeat;
+            }
+                .section1{
+             display:flex;
+             justify-content:space-around;
+             align-items:center;
+             background-color:burlywood;
+             font-family: Arial, Helvetica, sans-serif;
+             margin-top:20px;
+            
+             }
+             .logo{
+             width:40%;
+             border-radius: 10px;
+         }
+         .jumbo{ 
+             width:70%;
+             transition: 0.5s;
+             color:rgb(0, 0, 0)
+         }  
+         .link1{
+             color:white;
+             font-size:20px;
+             text-decoration:none;
+             padding:30px
+         } 
+         a:hover{ border-left:0.1px solid black;
+            border-right: 0.5px solid black ;
+         transform:scale(1.1)
+         }
+         .spongebob{
+             width:1350px;
+             height:100px;
+             background-image:url('https://cwestgate.com/wp-content/uploads/2017/01/ChrisWestgate_BurgerRoll-copy.gif');
+             text-align: center;
+            
+         }
+         .image{
+             border:1px solid black;
+             border-radius:70px;
+             height:100px;
+             width:100px
+             
+         }
+         .food{
+             display:flex;
+             justify-content:space-around;
+             text-align:center;
+             margin-top:20px
+         }
+         .pencil{
+             padding:20px;
+             width:28%;
+             height:280px;
+             color:white;font-family:'Brush Script MT',cursive;font-size: 30px;
+             
+             background-color:mediumseagreen;
+
+         }
+         button{
+             height:20px;
+             width:50px
+         }
+         #d{
+             background-color: black;
+             color:white;
+             width:100px;
+             height:30px;
+             margin-right:-10px
+         }
+         #l{
+             background-color: white;
+             color:black;
+             width:100px;
+             height:30px;
+             margin-right:-300px
+         }
+      
+        </style>
+    </head>
+    <body>
+        <audio id="song1">
+            <source src="the-cutest-bunny.mp3">
+        </audio>
+        <audio id="song2">
+            <source src="batchbug-sweet-dreams.mp3">
+        </audio>
+        <audio id="song3">
+            <source src="春のテーマ-Spring-field-.mp3">
+        </audio>
+        <audio id="song4">
+            <source src="John_Bartmann_-_09_-_Happy_Clappy-1.mp3">
+        </audio>
+        <audio id="song5">
+            <source src="Lights.mp3">
+        </audio>
+        <audio id="song6"> 
+            <source src="musicbyaden-dusk.mp3">
+        </audio>
+        <audio id="song7">
+            <source src="Carefree.mp3">
+        </audio>
+        <div class="spongebob">
+            <label style="font-family: 'Brush Script MT', cursive;font-size: 80px;color:cornsilk;font-weight: 300;text-align: center;"> M Cooking&nbsp;&nbsp;&nbsp;</label>
+            <button onclick="dark()" id="d">Dark Theme</button>
+            <button onclick="light()" id="l">Light Theme</button>
+        </div>
+          <section class="section1">
+              <div class="logo"> 
+               <img src="https://i.pinimg.com/originals/b2/71/85/b271854e3c0b2302c87aad38b5e3299f.jpg" alt="LOGO" width=100% height=100% class="image" id="c" onclick="burger()">   
+              </div>
+              <div class="jumbo">
+                  <a href="project3.html" class="link1">Home</a>
+                  <a href="gallery.html"class="link1">Food Gallery</a>
+                  <a href="signup.html"class="link1">Login/Sign Up</a>
+                  <a href="#"class="link1">Music</a>
+                  <a href="#"class="link1">Help</a>
+              </div>
+          </section>
+          <p style="color:black;font-family:'Brush Script MT',cursive;font-size: 40px;" id="cake"><u>Cooking Music</u></p>
+          <p style="color:black;font-family:'Brush Script MT',cursive;font-size: 40px;" id="ccc"><u>Listen to Your Favourite Music While Cooking!</u></p>
+          <div class="food">
+            <div class="pencil" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWeruTaGbLXOGvxPQoE4onUW_wzGqqTLaHTg&usqp=CAU"width=300px height=240px ><br>
+                <button onclick="a()">Play</button> <button onclick="a1()">Pause</button></div>
+            <div class="pencil"><img src="https://www.chosic.com/wp-content/uploads/FreeMusicTagsImages/small/Ambient.jpg"width=300px height=240px ><br>
+                <button onclick="b()">Play</button> <button onclick="b1()">Pause</button></div>
+            <div class="pencil"><img src="https://www.chosic.com/wp-content/uploads/FreeMusicTagsImages/small/Asian.jpg"width=300px height=240px ><br>
+                <button onclick="c()">Play</button> <button onclick="c1()">Pause</button> </div>
+           </div>
+           <div class="food">
+            <div class="pencil" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJBGJoROmq2WnQGpWmb4CPFBj4weLbYwrLvw&usqp=CAU"width=300px height=240px ><br>
+                <button onclick="d()">Play</button> <button onclick="d1()">Pause</button></div>
+            <div class="pencil"><img src="images.jpg"width=300px height=240px ><br>
+                <button onclick="e()">Play</button> <button onclick="e1()">Pause</button></div>
+            <div class="pencil"><img src="https://www.diabetes.org/sites/default/files/2019-08/Diabetes-Superfoods-min.jpg"width=300px height=240px ><br>
+                <button onclick="f()">Play</button> <button onclick="f1()">Pause</button> </div>
+            </div>
+          <script type="text/javascript">
+            function dark() {
+                document.getElementById("ccc").style.color="white";
+                document.getElementById("bread").style.color="white";
+                document.getElementById("cake").style.color="white";
+                document.body.style.backgroundImage="url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAADICAMAAAA9W+hXAAAAA1BMVEUoIx1MizE6AAAANElEQVR4nO3BMQEAAADCoPVP7WsIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAN1+AABVhDU2QAAAABJRU5ErkJggg==')";
+            }
+            function light() {
+             document.getElementById("ccc").style.color="black";
+             document.getElementById("bread").style.color="black";
+             document.getElementById("cake").style.color="black";
+                document.body.style.backgroundImage="url('https://www.asianpaints.com/content/dam/asian_paints/colours/swatches/7897.png.transform/cc-width-720-height-540/image.png')";backgroundSize="cover";backgroundRepeat="noRepeat";
+            }
+            function burger() {
+                var a=0;
+                if(a==1){
+                    document.getElementById("c").src="https://i.pinimg.com/originals/b2/71/85/b271854e3c0b2302c87aad38b5e3299f.jpg";
+                }
+                else{
+                    document.getElementById("c").src="https://illustoon.com/photo/4728.png";
+                }
+            }
+            function a() {
+                document.getElementById("song1").play();
+            }
+            function a1() {
+                document.getElementById("song1").pause();
+            }
+            function b() {
+                document.getElementById("song2").play();
+            }
+            function b1() {
+                document.getElementById("song2").pause();
+            }
+            function c() {
+                document.getElementById("song3").play();
+            }
+            function c1() {
+                document.getElementById("song3").pause();
+            }
+            function d() {
+                document.getElementById("song4").play();
+            }
+            function d1() {
+                document.getElementById("song4").pause();
+            }  
+            function e() {
+                document.getElementById("song5").play();
+            }
+            function e1() {
+                document.getElementById("song5").pause();
+            }  function f() {
+                document.getElementById("song6").play();
+            }
+            function f1() {
+                document.getElementById("song6").pause();
+            }
+            function dark() {
+       document.getElementById("ccc").style.color="white";
+       document.getElementById("cake").style.color="white";
+       document.body.style.backgroundImage="url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAADICAMAAAA9W+hXAAAAA1BMVEUoIx1MizE6AAAANElEQVR4nO3BMQEAAADCoPVP7WsIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAN1+AABVhDU2QAAAABJRU5ErkJggg==')";
+   }
+   function light() {
+    document.getElementById("ccc").style.color="black";
+    document.getElementById("cake").style.color="black";
+    document.body.style.backgroundImage="url('https://www.asianpaints.com/content/dam/asian_paints/colours/swatches/7897.png.transform/cc-width-720-height-540/image.png')";backgroundSize="cover";backgroundRepeat="noRepeat";
+   }
+   function burger() {
+       var a=0;
+       if(a==1){
+           document.getElementById("c").src="https://i.pinimg.com/originals/b2/71/85/b271854e3c0b2302c87aad38b5e3299f.jpg";
+       }
+       else{
+           document.getElementById("c").src="https://illustoon.com/photo/4728.png";
+       }
+   }
+           </script>
+    </body>
+</html>
