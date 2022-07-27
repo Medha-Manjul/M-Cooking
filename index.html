@@ -11,7 +11,7 @@
              display:flex;
              justify-content:space-around;
              align-items:center;
-             background-color:burlywood;
+             background-color:rgb(247, 214, 170);
              font-family: Arial, Helvetica, sans-serif;
              margin-top:20px;
             
@@ -31,8 +31,8 @@
              text-decoration:none;
              padding:30px
          } 
-         a:hover{ border-left:0.1px solid black;
-            border-right: 0.5px solid black ;
+         a:hover{ border-left:0.1px solid white;
+            border-right: 0.5px solid white ;
          transform:scale(1.1)
          }
          .spongebob{
@@ -113,7 +113,24 @@
                 <a href="settings.html"class="link1">Music</a>
                 <a href="#"class="link1">Help</a>
             </div>
-        </section>
+        </section><br>
+        <div style="display:flex;justify-content: space-around;">
+            <div style="width:92%">
+                <div id="dha">
+                <img src="https://www.technogym.com/wpress/wp-content/uploads/2018/12/Tartare.jpg" height=330px width=100%>
+               </div>
+                <div id="med" style="display:none;">
+                <img src="https://res.cloudinary.com/hksqkdlah/image/upload/31785_sfs-grilled-shrimp-vegetable-kebabs-34.jpg" height=330px width=100% >
+                </div>
+                <div id="man" style="display:none;">
+                    <img src="https://res.cloudinary.com/hksqkdlah/image/upload/31785_sfs-grilled-shrimp-vegetable-kebabs-34.jpg" height=330px width=100% >
+                    </div>
+                <div id="jul" style="display:none;">
+                    <img src="https://italy4real.com/wp-content/uploads/2020/11/pizza-1.jpg" height=330px width=100% >
+                    </div>
+            </div>
+            <div id="arrow" style="height:60px;width:4%;margin-top:100px" onclick="last()"><img src="https://image.shutterstock.com/image-vector/isgreaterthan-icon-260nw-674466826.jpg"height=60px width=60px style="border-radius:60%;"></div>
+        </div>
         <p style="color:black;font-family:'Brush Script MT',cursive;font-size: 40px;" id="ccc"><u>Today's Specials</u></p>
           <img src="https://www.kohinoor-joy.com/wp-content/uploads/2020/01/indo-chinese-food.jpg" width=1330px height=450px usemap="#zpaq">
           
@@ -125,7 +142,7 @@
               <area shape="circle" coords="800,320,130" href="manchow soup.html">
               <area shape="circle" coords="1060,160,120" href="chowmein.html">
           </map>
-          <label>Click on the dish you like</label>
+          <label style="font-size: 21px;">Click on the dish you like</label>
     <p style="color:black;font-family:'Brush Script MT',cursive;font-size: 40px;" id="bread"><u>Search Recipies by Categories</u><br>
     </p>
     <div class="food">
@@ -149,6 +166,7 @@
 </div>
 
  <script type="text/javascript">
+ var k=0;
    function dark() {
        document.getElementById("ccc").style.color="white";
        document.getElementById("bread").style.color="white";
@@ -168,6 +186,23 @@
        }
        else{
            document.getElementById("c").src="https://illustoon.com/photo/4728.png";
+       }
+   }
+   function last(){
+       if(k==0){
+        document.getElementById("dha").style.display="none";
+       document.getElementById("med").style.display="block";
+       document.getElementById("man").style.display="none";
+       k=5;
+       }
+       
+     
+       
+       else{
+        document.getElementById("dha").style.display="none";
+       document.getElementById("med").style.display="none";
+       document.getElementById("man").style.display="none";
+       document.getElementById("jul").style.display="block";
        }
    }
   </script>
